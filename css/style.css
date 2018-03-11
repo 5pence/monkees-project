@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Fontdiner+Swanky: 400, 700|Roboto:100,200,300,400,500,600,700');
+
 /*--------------------------------------------------------Colours-------------*/
 
 .menu-color-home {
@@ -35,15 +37,7 @@ header {
 
 .header-image-contain {
 
-    background: url("../images/The_Monkees_March_1967.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 360px;
-    transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    -webkit-transition: all 1s ease-in-out;
+    visibility: hidden;
 }
 
 .logo-image-contain {
@@ -51,7 +45,7 @@ header {
     background: url("../images/logo.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     display: block;
     min-height: 240px;
     transition: all 1s ease-in-out;
@@ -70,6 +64,7 @@ header {
 
 #nav li {
     padding: 0;
+    border-radius: 60px;
 }
 
 .menuitem {
@@ -86,7 +81,7 @@ header {
 }
 
 .menuitem a i {
-    padding-top: 22px;
+    padding-top: 25px;
     display: block;
     color: white;
     font-size: 26px;
@@ -95,7 +90,7 @@ header {
 .menuitem span {
     display: block;
     width: 100%;
-    padding-top: 5px;
+    padding-top: 12px;
     text-align: center;
     text-transform: uppercase;
     font-size: 16px;
@@ -103,9 +98,52 @@ header {
     letter-spacing: 2px;
 }
 
-/*-----------------------------------------------------------------Hover CSS--*/
+/*--------------------------------------------------------Side Content Panel--*/
 
-.hvr-sweep-to-bottom:before {
-    background: rgba(0, 0, 0, 0.2);
-    height: 120px;
+.border-home-side-content {
+    border: 10px solid #FC6336;
+    border-radius: 60px;
+    text-align: center;
+    padding: 15px;
+    min-height: 360px;
+    margin-top: 10px;
+}
+
+.border-home-side-content h3 {
+    font-family: 'Fontdiner Swanky', cursive;
+    font-weight: 700;
+}
+
+.border-home-side-content p {
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #525252;
+}
+
+.border-home-side-content a {
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #00A6CB;
+    text-decoration: none;
+}
+
+
+/*---------------------------------------------------------Media Queries------*/
+
+@media(min-width: 768px) {
+    .header-image-contain {
+    visibility: visible;
+    background: url("../images/The_Monkees_1967.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 360px;
+    transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
 }
