@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <title>The Monkees - Home</title>
+    
+     
 </head>
 
 <body>
     <header class="container-fluid">
-        <div class="row news-flash color-home">Get the latest - <a href="#">Join our Fan Club here!</a></div>
+        <div class="row news-flash color-home">Get the latest - <a href="/login" data-toggle='modal' data-target='#signUpModal'>Join our Fan Club here!</a></div>
         <div class="row">
             <div class="col-md-4 header-image-contain">
             </div>
@@ -31,13 +33,13 @@
                             <a href="index.html" class="hvr-grow"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
                         </li>
                         <li class="col-xs-6 col-sm-3 color-music menuitem">
-                            <a href="#" class="hvr-grow"><i class="fa fa-music" aria-hidden="true"></i><span>Music</span></a>
+                            <a href="music.html" class="hvr-grow"><i class="fa fa-music" aria-hidden="true"></i><span>Music</span></a>
                         </li>
                         <li class="col-xs-6 col-sm-3 color-hire-us menuitem">
-                            <a href="#" class="hvr-grow"><i class="fa fa-commenting" aria-hidden="true"></i><span>Hire Us</span></a>
+                            <a href="hire-us.html" class="hvr-grow"><i class="fa fa-commenting" aria-hidden="true"></i><span>Hire Us</span></a>
                         </li>
                         <li class="col-xs-6 col-sm-3 color-gallery menuitem">
-                            <a href="#" class="hvr-grow"><i class="fa fa-camera-retro" aria-hidden="true"></i><span>Gallery</span></a>
+                            <a href="gallery.html" class="hvr-grow"><i class="fa fa-camera-retro" aria-hidden="true"></i><span>Gallery</span></a>
                         </li>
                     </ul>
                 </div>
@@ -50,17 +52,17 @@
                 <h3>Did You Know?</h3>
                 <p>We are now available for bookings!</p>
                 <p>Fancy us playing at YOUR wedding or party?</p>
-                <p>Check out <a href="#">the Hire Us page</a> for more info</p>
+                <p>Check out <a href="hire-us.html">the Hire Us page</a> for more info</p>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-8 home-main-content">
                 <p>Hey, Hey, We're The Monkees</p>
                 <p>We'd love to show you around</p>
-                <p>You can listen to our <a href="#" class="color-text-music">music</a></p>
-                <p><a href="#" class="color-text-hire-us">Hire us</a> and we'll be inbound</p>
+                <p>You can listen to our <a href="music.html" class="color-text-music">music</a></p>
+                <p><a href="hire-us.html" class="color-text-hire-us">Hire us</a> and we'll be inbound</p>
                 <br>
-                <p>And take a look at our <a href="#" class="color-text-gallery">pictures</a></p>
+                <p>And take a look at our <a href="gallery.html" class="color-text-gallery">pictures</a></p>
                 <p>We're sure you'll have a blast</p>
-                <p>And remember to join the <a href="#">fan club</a></p>
+                <p>And remember to join the <a href="/login" data-toggle='modal' data-target='#signUpModal'>fan club</a></p>
                 <p>And you'll get the latest fast...</p>
             </div>
         </div>
@@ -73,20 +75,45 @@
                 <p>Why not join our fan club?</p>
                 <p>That way you'll never miss out</p>
                 <p>on last minute tour dates and offers</p>
-                <p><a href="#">Click Here to join now</a></p>
+                <p><a href="/login" data-toggle='modal' data-target='#signUpModal'>Click Here to join now</a></p>
             </div>
             <div class="col-sm-4">
                 <h5 class="social-section">Our Social</h5>
                 <ul class="list-inline social-links">
-                    <li><a target="_blank" href=""><i class="fa fa-facebook"></i></a> </li>
-                    <li><a target="_blank" href=""><i class="fa fa-twitter"></i></a> </li>
-                    <li><a target="_blank" href=""><i class="fa fa-youtube"></i></a> </li>
+                    <li><a target="_blank" href="https://en-gb.facebook.com/TheMonkees/"><i class="fa fa-facebook"></i></a> </li>
+                    <li><a target="_blank" href="https://twitter.com/TheMonkees?lang=en"><i class="fa fa-twitter"></i></a> </li>
+                    <li><a target="_blank" href="https://www.youtube.com/user/themonkees"><i class="fa fa-youtube"></i></a> </li>
                 </ul>
             </div>
         </div>
     </footer>
 
+<!-- Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Sign Up to the Fan Club</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                            <p class="help-block">We'll never share your email address with anyone</p>
+                        </div>
+                        <button type="submit" class="btn btn-success">Sign Up!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+   
 </body>
 
 </html>

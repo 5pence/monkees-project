@@ -237,6 +237,26 @@ footer {
     background: #e84610;
 }
 
+/*---------------------------------------------------------/* Buttons --------*/
+
+.btn-success {
+    color: #f7f1ed;
+    background-color: #e79004;
+    border-color: #e79004;
+    border-radius: 62px;
+}
+
+.btn-success:hover,
+.btn-success:active,
+.btn-success:focus,
+.btn-success:active:focus {
+    color: #f7f1ed;
+    background-color: #fba924;
+    border-color: #fba924;
+    border-radius: 62px;
+    border: 0;
+}
+
 /*---------------------------------------------------------Media Queries------*/
 
 @media(min-width: 768px) {
