@@ -114,21 +114,47 @@ header {
 
 /*--------------------------------------------------------Side Content Panel--*/
 
-.border-home-side-content {
+.border-home {
     border: 10px solid #FC6336;
     border-radius: 60px;
     text-align: center;
     padding: 15px;
-    /*min-height: 382px;*/
+    min-height: 360px;
     margin-top: 10px;
 }
 
-.border-home-side-content h3 {
+.border-music {
+    border: 10px solid #7BB665;
+    border-radius: 60px;
+    text-align: center;
+    padding: 15px;
+    min-height: 360px;
+    margin-top: 10px;
+}
+
+.border-hire-us {
+    border: 10px solid #00A6CB;
+    border-radius: 60px;
+    text-align: center;
+    padding: 15px;
+    min-height: 360px;
+    margin-top: 10px;
+}
+
+.border-gallery {
+    border: 10px solid #794784;
+    border-radius: 60px;
+    text-align: center;
+    padding: 15px;
+    min-height: 360px;
+    margin-top: 10px;
+}
+.side-content h3 {
     font-family: 'Fontdiner Swanky', cursive;
     font-weight: 700;
 }
 
-.border-home-side-content p {
+.side-content p {
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -136,7 +162,7 @@ header {
     color: #525252;
 }
 
-.border-home-side-content a {
+.side-content a {
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -163,6 +189,76 @@ header {
     margin-top: 10px;
 }
 
+/*------------------------------------------------------------Music Content---*/
+
+.music-main-content {
+    display: block;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #525252;
+    border: 10px solid #7BB665;
+    border-radius: 60px;
+    padding: 15px;
+    min-height: 360px;
+    margin-top: 10px;
+}
+
+h2 {
+    font-family: 'Fontdiner Swanky', cursive;
+    font-size: 32px;
+    padding-bottom: 20px;
+}
+
+.audio-placeholder {
+    display: inline-block;
+    padding-bottom: 25px;
+    border: 5px solid #7BB665;
+    border-radius: 30px;
+}
+
+.audio-placeholder h5 {
+    font-family: 'Fontdiner Swanky', cursive;
+    font-size: 18px;
+    margin-top: 7px;
+    margin-right: 10px;
+}
+
+
+/*----------------------------------------------------------Hire Us Content---*/
+
+.hire-us-main-content {
+    display: block;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #525252;
+    
+    border: 10px solid #00A6CB;
+    border-radius: 60px;
+    padding: 15px;
+    min-height: 360px;
+    margin-top: 10px;
+}
+
+/*----------------------------------------------------------Gallery Content---*/
+
+.gallery-main-content {
+    display: block;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #525252;
+    
+    border: 10px solid #794784;
+    border-radius: 60px;
+    padding: 15px;
+    min-height: 360px;
+    margin-top: 10px;
+}
 /*----------------------------------------------------------------Footer------*/
 
 footer {
