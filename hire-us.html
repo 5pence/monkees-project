@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <title>The Monkees - Hire Us</title>
-    
-     
 </head>
 
 <body>
@@ -56,14 +54,32 @@
                 <p>Please fill out the form and let us know what you had in mind and we will get back to you</p>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-8 hire-us-main-content">
-                <p>Hey, Hey, We're The Monkees</p>
-                <p>We'd love to show you around</p>
-                <p>You can listen to our <a href="music.html" class="color-text-music">music</a></p>
-                <p><a href="hire-us.html" class="color-text-hire-us">Hire us</a> and we'll be inbound</p>
-                <p>And take a look at our <a href="gallery.html" class="color-text-gallery">pictures</a></p>
-                <p>We're sure you'll have a blast</p>
-                <p>And remember to join the <a href="/login" data-toggle='modal' data-target='#signUpModal'>fan club</a></p>
-                <p>And you'll get the latest fast...</p>
+                <h2>Hire The Monkees</h2>
+                <form class="form-horizontal" action="/thankyou-event-page.html">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="email">Name:</label>
+                        <div class="col-sm-10">
+                            <input type="name" class="form-control" id="name" placeholder="Enter name" name="name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="email">Email:</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required placeholder="Please enter valid email address">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="additional">Event Information:</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" rows="5" id="additional-info" placeholder="Please include location, date and any other additional information" name="additional-info" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
@@ -88,7 +104,7 @@
         </div>
     </footer>
 
-<!-- Modal -->
+    <!-- Modal -->
     <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -97,10 +113,10 @@
                     <h4 class="modal-title" id="myModalLabel">Sign Up to the Fan Club</h4>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form action="fan-club-sign-up.html">
                         <div class="form-group">
                             <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email" placeholder="Email">
+                            <input type="email" class="form-control" id="email" placeholder="Email" required>
                             <p class="help-block">We'll never share your email address with anyone</p>
                         </div>
                         <button type="submit" class="btn btn-success">Sign Up!</button>
@@ -113,7 +129,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-   
+
 </body>
 
 </html>
