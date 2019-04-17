@@ -26,7 +26,7 @@ The navigation is functional and two forms (join the fan club and hire us) are i
 
 ### Deployment
 
-Website was coded in Cloud 9 IDE, a local GIT directory was used for version control and then uploaded to GITHUB using Ubuntu / Bash script. Once in a GITHUB repositories it was made live using GITHUB Pages. The website can be found at:
+Website was coded in the Cloud 9 IDE, a local GIT directory was used for version control and then uploaded to GITHUB using Ubuntu / Bash script. Once in a GITHUB repositories it was made live using GITHUB Pages. The website can be found at:
 https://5pence.github.io/monkees-project/
 
 ### Testing
